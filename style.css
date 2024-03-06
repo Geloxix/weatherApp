@@ -1,0 +1,62 @@
+:root {
+    --bg-clr: rgb(18, 18, 18);
+    --primary-clr: hsl(174, 96%, 52%);
+    --primary-clr-light: hsla(174, 96%, 52%, 0.673);
+    --light-clr: hsl(0, 0%, 100%);
+    --border-clr: rgba(128, 128, 128, 0.245);
+    --main-ff: Poppins, Helvetica, Sans-serif;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+* {
+    background-color: var(--bg-clr);
+    font-family: var(--main-ff);
+}
+main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search {
+    border: 1px solid rgba(128, 128, 128, 0.103);
+    padding: 20px;
+}
+.country {
+    border:1px solid var(--border-clr);
+    border-radius: 5px;
+    padding: 6px 8px 6px;
+    width: 250px;
+}
+.submit-btn {
+    padding: 6px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid var(--border-clr);
+    background-color: transparent;
+    transition: all 0.3s;
+}
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--light-clr);
+}
+.submit-btn i {
+    color: var(--light-clr);
+    background-color: transparent;
+    font-size: 16px;
+}
+.submit-btn:hover {
+    background-color: var(--primary-clr);
+    border: none;
+    color: var(--primary-clr);
+    /* box-shadow: 0px 0px 2px 3px var(--primary-clr); */
+}
+.country :focus {
+    border: 1px solid var(--primary-clr);
+}
